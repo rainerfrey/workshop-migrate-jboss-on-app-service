@@ -45,7 +45,7 @@
 
         "virtualNetworkName": {
             "type": "string",
-            "defaultValue": "ilb-ase-vnet"
+            "defaultValue": "ilb-ase-vnet2"
         },
         "location": {
             "type": "string",
@@ -81,7 +81,7 @@
         },
         "delegationName": {
             "type": "string",
-            "defaultValue": "ilb-ase-delegation"
+            "defaultValue": "ilb-ase-delegation2"
         },
         "ilbMode": {
             "type": "int",
@@ -123,7 +123,7 @@
         }
     },
     "variables": {
-        "aseName": "[concat(parameters('webAppName'),'-ilb-ase')]",
+        "aseName": "[concat(parameters('webAppName'),'-ilb-ase2')]",
         "hostingPlanName": "[concat(parameters('webAppName'),'-plan')]",
         "privateZoneName": "[concat(variables('aseName'),'.appserviceenvironment.net')]",
         "virtualNetworkId": "[resourceId(subscription().subscriptionId, resourceGroup().name, 'Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
